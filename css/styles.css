@@ -102,7 +102,6 @@ img {
 .header-link {
     display: block;
     padding-top: 24px;
-    padding-bottom: 24px;
 
     font-weight: 500;
     font-style: normal;
@@ -126,8 +125,8 @@ img {
 .header-link.current::after {
   content: "";
   display: block;
-  margin-top: 24px;
   width: 100%;
+  margin-top:24px;
   border-bottom: 4px solid var(--accent-color);
   border-radius: 2px;
 }
@@ -688,8 +687,9 @@ img {
     transition: transform var(--transition-dur-time);
 }
 
-.service-link:hover .overlay-text {
-    transform: translateY(0);
+.service-link:hover .overlay-text,
+.service-link:focus .overlay-text {
+transform: translateY(0);
 }
 
 .backdrop {
